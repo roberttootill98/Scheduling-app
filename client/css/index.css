@@ -16,6 +16,10 @@ body {
   color: blue;
 }
 
+#link {
+  text-align: right;
+}
+
 a:link, a:visited {
   background-color: #f44336;
   color: white;
@@ -23,6 +27,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  width: 500px;
 }
 
 a:hover, a:active {
