@@ -1,34 +1,28 @@
 /* main css file */
 
+* {
+  padding: 0;
+}
+
 body {
   background: #42f477;
 }
 
-#coloured {
-  color: red;
+#dayContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-#back {
-  background: brown;
+.day {
+  list-style: none;
+  text-align: center;
+  border: 2.5px solid black;
+  margin: 5em;
+  min-width: 15em;
+  background: pink;
 }
 
-.item {
-  color: blue;
-}
-
-#link {
-  text-align: right;
-}
-
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 15px 25px;
-  text-decoration: none;
-  display: inline-block;
-  width: 500px;
-}
-
-a:hover, a:active {
-  background-color: red;
+.titleBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
