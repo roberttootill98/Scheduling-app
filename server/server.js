@@ -11,7 +11,7 @@ app.listen(8080);
 
 app.use('/', express.static('client'))
 app.get('/*', (req, res) => {
-  let top = path.resolve('.');
+  const top = path.resolve('.');
   res.sendFile(path.join(dir));
 });
 
