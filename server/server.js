@@ -4,7 +4,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-//const db = require('./database.js');
+const db = require('./db/interface.js');
 
 // server start
 app.listen(8080);
@@ -12,7 +12,7 @@ app.listen(8080);
 app.use('/', express.static('client'))
 app.get('/*', (req, res) => {
   const top = path.resolve('.');
-  res.sendFile(path.join(dir));
+  res.sendFile(path.join(top));
 });
 
 // server functions -- http verbs
